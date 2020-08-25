@@ -1,0 +1,13 @@
+label {
+  cursor: pointer;
+}
+
+textarea {
+  width: 400px;
+  height: 150px;
+}
+th, td, tr {
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+
+}
