@@ -12,22 +12,22 @@ var nameArea = document.getElementById("nameArea");
 
 
 function assignRoles() {
-  document.getElementById("nameFill").style.display = "none";
-  document.getElementById("roleFill").style.display = "none";
-  document.getElementById("goKnop").style.display = "none";
   addPlainsToRoles();
-  randomize();
+  if (names.length !== roles.length) {
+    document.getElementById('ongelijk').innerHTML = "Namen en rollen zijn ongelijk."
+  } else {
+    document.getElementById("nameFill").style.display = "none";
+    document.getElementById("roleFill").style.display = "none";
+    document.getElementById("goKnop").style.display = "none";
+    randomize();
+  }
 }
 
 function randomize() {
-  if (names.length !== roles.length) {
-    useTwitch.innerHTML = "Aantal rollen zijn ongelijk aan het aantal namen."
-    return;
-  }
-  useTwitch.style.display = "inline";
+  useTwitch.style.display = 'inline';
   for (var i = 0; i < names.length; i++) {
     randomNumber = randomIntInc(roles.length);
-    console.log(names[i] + " = " + roles[randomNumber]);
+    // console.log(names[i] + " = " + roles[randomNumber]);
     fillNameTable(i);
     removed = roles.splice(randomNumber, 1);
   }
@@ -49,7 +49,7 @@ function fillNameTable(i) {
 function updateNameNumber() {
   names = nameArea.value.replace(/\r\n/g, "\n").split("\n");
   nameAmount.innerHTML = "Er zijn nu <b>" + names.length + "</b> spelers in het spel.";
-  console.log(names);
+  // console.log(names);
 }
 
 function updateRoleNumber() {
@@ -57,7 +57,7 @@ function updateRoleNumber() {
   roleNumber = roleNumber + parseInt(document.getElementById("regWolf").value);
   roleNumber = roleNumber + parseInt(document.getElementById("regBurg").value);
   roleAmount.innerHTML = "Er zijn nu <b>" + roleNumber + "</b> rollen in het spel.";
-  console.log(getSelectedCheckboxValues('color'));
+  // console.log(getSelectedCheckboxValues('color'));
 }
 
 function addPlainsToRoles() {
