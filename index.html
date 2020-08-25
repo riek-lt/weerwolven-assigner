@@ -35,36 +35,41 @@
 
 				<!-- Content -->
 				<section>
-					<div id="nameFill" style="width:40%; float:left; margin-right: 50px;" >
-												<div id="nameAmount">Er zijn nu geen spelers in het spel.</div><br>
+					<div id="nameFill" style="width:40%; float:left; margin-right: 50px;">
+						<div id="nameAmount">Er zijn nu geen spelers in het spel.</div><br>
 						<label for="nameArea">All contenders</label>
 
-	<textarea id="nameArea" name="w3review" rows="18" cols="20" onchange="updateNameNumber()">
-	1 name per line please ty	</textarea></div>
+						<textarea id="nameArea" name="w3review" rows="18" cols="20" onchange="updateNameNumber()">
+	1 name per line please ty	</textarea>
+					</div>
 					<div id="roleFill" style="width:50%; float:left;">
 						<div id="roleAmount">Er zijn nu geen rollen in het spel.</div><br>
 
 						<input type="number" id="regWolf" value="0" onchange="updateRoleNumber()"> Aantal reguliere wolven<br>
 						<input type="checkbox" name="color" value="Besmettelijke wolf" onclick="updateRoleNumber()"> Besmettelijke wolf<br>
-					  <input type="checkbox" name="color" value="Medusa wolf" onclick="updateRoleNumber()"> Medusawolf<br>
-					  <input type="checkbox" name="color" value="Wolf in schaapskleren" onclick="updateRoleNumber()"> Wolf in schaapskleren<br><br>
+						<input type="checkbox" name="color" value="Medusa wolf" onclick="updateRoleNumber()"> Medusawolf<br>
+						<input type="checkbox" name="color" value="Wolf in schaapskleren" onclick="updateRoleNumber()"> Wolf in schaapskleren<br>
+						<input type="checkbox" name="color" value="De jonge hond" onclick="updateRoleNumber()"> De jonge Hond<br><br>
 
 						<input type="number" id="regBurg" value="0" onchange="updateRoleNumber()"> Aantal reguliere burgers <br>
-					  <input type="checkbox" name="color" value="Beschermengel" onclick="updateRoleNumber()"> Beschermengel<br>
-					  <input type="checkbox" name="color" value="Augusto" onclick="updateRoleNumber()"> Augusto<br>
-					  <input type="checkbox" name="color" value="Grafdelver" onclick="updateRoleNumber()"> Grafdelver<br>
-					  <input type="checkbox" name="color" value="Jager" onclick="updateRoleNumber()"> Jager<br>
-					  <input type="checkbox" name="color" value="Het kruidenvrouwtje" onclick="updateRoleNumber()"> Het kruidenvrouwtje<br>
-					  <input type="checkbox" name="color" value="Priester" onclick="updateRoleNumber()"> Priester<br>
-					  <input type="checkbox" name="color" value="Spiekersloan-kampioen" onclick="updateRoleNumber()"> Spiekersloan-kampioen<br>
-					  <input type="checkbox" name="color" value="De onbetaalde prostituee" onclick="updateRoleNumber()"> De onbetaalde prostituee<br>
-					  <input type="checkbox" name="color" value="Ouwe lul/trut" onclick="updateRoleNumber()"> Ouwe lul/trut<br>
-					  <input type="checkbox" name="color" value="Blinde" onclick="updateRoleNumber()"> Blinde<br>
-					  <input type="checkbox" name="color" value=" Burgerlijke burger" onclick="updateRoleNumber()"> Burgerlijke burger<br>
-					  <input type="checkbox" name="color" value="Toneelspeler" onclick="updateRoleNumber()"> Toneelspeler<br>
+						<input type="checkbox" name="color" value="Beschermengel" onclick="updateRoleNumber()"> Beschermengel<br>
+						<input type="checkbox" name="color" value="Augusto" onclick="updateRoleNumber()"> Augusto<br>
+						<input type="checkbox" name="color" value="Grafdelver" onclick="updateRoleNumber()"> Grafdelver<br>
+						<input type="checkbox" name="color" value="Jager" onclick="updateRoleNumber()"> Jager<br>
+						<input type="checkbox" name="color" value="Kruidenvrouwtje" onclick="updateRoleNumber()"> Kruidenvrouwtje<br>
+						<input type="checkbox" name="color" value="Priester" onclick="updateRoleNumber()"> Priester<br>
+						<input type="checkbox" name="color" value="Spiekersloan-kampioen" onclick="updateRoleNumber()"> Spiekersloan-kampioen<br>
+						<input type="checkbox" name="color" value="De onbetaalde prostituee" onclick="updateRoleNumber()"> De onbetaalde prostituee<br>
+						<input type="checkbox" name="color" value="Ouwe lul/trut" onclick="updateRoleNumber()"> Ouwe lul/trut<br>
+						<input type="checkbox" name="color" value="Stomme" onclick="updateRoleNumber()"> Stomme<br>
+						<input type="checkbox" name="color" value=" Burgerlijke burger" onclick="updateRoleNumber()"> Burgerlijke burger<br>
+						<input type="checkbox" name="color" value="Toneelspeler" onclick="updateRoleNumber()"> Toneelspeler<br>
+						<input type="checkbox" name="color" value="Kleptomaan" onclick="updateRoleNumber()"> Kleptomaan<br>
+						<input type="checkbox" name="color" value="Matchmaker" onclick="updateRoleNumber()"> Matchmaker<br>
+						<input type="checkbox" name="color" value="Priester" onclick="updateRoleNumber()"> Priester<br>
 					</div>
 
-										<br><button  id="goKnop" onClick="assignRoles()">Verdeel rollen</button>
+					<br><button id="goKnop" onClick="assignRoles()">Verdeel rollen</button>
 
 
 
@@ -77,7 +82,7 @@
 						</tr>
 
 					</table>
-					<br><button onClick="window.location.reload();">Refresh Page</button>
+					<!-- <br><button onClick="window.location.reload();">Refresh Page</button> -->
 				</section>
 
 			</div>
