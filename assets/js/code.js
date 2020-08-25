@@ -49,8 +49,3 @@ function getSelectedCheckboxValues(name) {
     });
     return roleValues;
 }
-
-const btn = document.querySelector('#btn');
-btn.addEventListener('click', (event) => {
-    alert(getSelectedCheckboxValues('color'));
-});
