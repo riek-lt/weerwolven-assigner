@@ -35,6 +35,34 @@
 
 				<!-- Content -->
 				<section>
+					<div id="nameFill"></div>
+					<div id="roleFill">
+						<div id="roleAmount">Er zijn nu geen rollen in het spel.</div><br>
+						
+						<input type="number" id="regWolf" value="0" onchange="updateRoleNumber()"> Aantal reguliere wolven<br>
+						<input type="checkbox" name="color" value="Besmettelijke wolf" onclick="updateRoleNumber()"> Besmettelijke wolf<br>
+					  <input type="checkbox" name="color" value="Medusa wolf" onclick="updateRoleNumber()"> Medusawolf<br>
+					  <input type="checkbox" name="color" value="Wolf in schaapskleren" onclick="updateRoleNumber()"> Wolf in schaapskleren<br><br>
+
+						<input type="number" id="regBurg" value="0" onchange="updateRoleNumber()"> Aantal reguliere burgers <br>
+					  <input type="checkbox" name="color" value="Beschermengel" onclick="updateRoleNumber()"> Beschermengel<br>
+					  <input type="checkbox" name="color" value="Augusto" onclick="updateRoleNumber()"> Augusto<br>
+					  <input type="checkbox" name="color" value="Grafdelver" onclick="updateRoleNumber()"> Grafdelver<br>
+					  <input type="checkbox" name="color" value="Jager" onclick="updateRoleNumber()"> Jager<br>
+					  <input type="checkbox" name="color" value="Het kruidenvrouwtje" onclick="updateRoleNumber()"> Het kruidenvrouwtje<br>
+					  <input type="checkbox" name="color" value="Priester" onclick="updateRoleNumber()"> Priester<br>
+					  <input type="checkbox" name="color" value="Spiekersloan-kampioen" onclick="updateRoleNumber()"> Spiekersloan-kampioen<br>
+					  <input type="checkbox" name="color" value="De onbetaalde prostituee" onclick="updateRoleNumber()"> De onbetaalde prostituee<br>
+					  <input type="checkbox" name="color" value="Ouwe lul/trut" onclick="updateRoleNumber()"> Ouwe lul/trut<br>
+					  <input type="checkbox" name="color" value="Blinde" onclick="updateRoleNumber()"> Blinde<br>
+					  <input type="checkbox" name="color" value=" Burgerlijke burger" onclick="updateRoleNumber()"> Burgerlijke burger<br>
+					  <input type="checkbox" name="color" value="Toneelspeler" onclick="updateRoleNumber()"> Toneelspeler<br>
+
+						<!-- <button id="btn">Get Selected Colors</button> -->
+					</div>
+
+
+
 					<table id="names" style="width:50%; ">
 						<tr>
 							<th>Naam
