@@ -63,10 +63,10 @@ function updateRoleNumber() {
 function addPlainsToRoles() {
   roles = getSelectedCheckboxValues('color');
   for (var i = 0; i < parseInt(document.getElementById("regWolf").value); i++) {
-    roles.push("wolf");
+    roles.push("Wolf");
   }
   for (var i = 0; i < parseInt(document.getElementById("regBurg").value); i++) {
-    roles.push("burger");
+    roles.push("Burger");
   }
 }
 
