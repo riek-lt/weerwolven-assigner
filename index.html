@@ -8,7 +8,7 @@
 <html>
 
 <head>
-	<title>Weerwolven assigning tool by @Riek_lt</title>
+	<title>Weerwolven rolverdeler tool by @Riek_lt</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,7 +25,7 @@
 
 				<!-- Header -->
 				<header id="header">
-					<a href="index.html" class="logo"><strong>Weerwolven </strong> assigning tool</a>
+					<a href="index.html" class="logo"><strong>Weerwolven </strong> rolverdeler tool</a>
 					<ul class="icons">
 						<li><a href="https://twitter.com/riek_lt" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 						<li><a href="https://twitch.tv/riekelt" class="icon brands fa-twitch" target="_blank"><span class="label">Twitch</span></a></li>
@@ -35,8 +35,13 @@
 
 				<!-- Content -->
 				<section>
-					<div id="nameFill"></div>
-					<div id="roleFill">
+					<div id="nameFill" style="width:40%; float:left; margin-right: 50px;" >
+												<div id="nameAmount">Er zijn nu geen spelers in het spel.</div><br>
+						<label for="nameArea">All contenders</label>
+
+	<textarea id="nameArea" name="w3review" rows="18" cols="20" onchange="updateNameNumber()">
+	1 name per line please ty	</textarea></div>
+					<div id="roleFill" style="width:50%; float:left;">
 						<div id="roleAmount">Er zijn nu geen rollen in het spel.</div><br>
 
 						<input type="number" id="regWolf" value="0" onchange="updateRoleNumber()"> Aantal reguliere wolven<br>
@@ -59,9 +64,11 @@
 					  <input type="checkbox" name="color" value="Toneelspeler" onclick="updateRoleNumber()"> Toneelspeler<br>
 					</div>
 
+										<br><button  id="goKnop" onClick="assignRoles()">Verdeel rollen</button>
 
 
-					<table id="names" style="width:50%; ">
+
+					<table id="names" style="width:50%; display:none;">
 						<tr>
 							<th>Naam
 							</th>
