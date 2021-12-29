@@ -25,7 +25,7 @@
 
 				<!-- Header -->
 				<header id="header">
-					<a href="index.html" class="logo"><strong>Weerwolven </strong> rolverdeler tool</a>
+					<a href="index.html" class="logo"><strong>Weerwolven</strong> rolverdeler tool</a>
 					<ul class="icons">
 						<li><a href="https://twitter.com/riek_lt" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 						<li><a href="https://twitch.tv/riekelt" class="icon brands fa-twitch" target="_blank"><span class="label">Twitch</span></a></li>
@@ -42,34 +42,37 @@
 						<textarea id="nameArea" name="w3review" rows="18" cols="20" onchange="updateNameNumber()"></textarea>
 					</div>
 					<div id="roleFill" style="width:50%; float:left;">
-						<div id="roleAmount">Er zijn nu geen rollen in het spel.</div><br>
+						<div id="roleAmount">Er zijn nu geen rollen in het spel.</div>
+						(Voor uitleg over een rol, houd je muis over de titel)<br><br>
 
-						<input type="number" id="regWolf" min="0" value="0" onchange="updateRoleNumber()"> Aantal reguliere wolven<br>
-						<input type="checkbox" name="color" value="Besmettelijke wolf" onclick="updateRoleNumber()"> Besmettelijke wolf<br>
-						<input type="checkbox" name="color" value="Medusa wolf" onclick="updateRoleNumber()"> Medusawolf<br>
-						<input type="checkbox" name="color" value="Wolf in schaapskleren" onclick="updateRoleNumber()"> Wolf in schaapskleren<br>
-						<input type="checkbox" name="color" value="De jonge hond" onclick="updateRoleNumber()"> De jonge Hond<br><br>
-						<input type="checkbox" name="color" value="Judas wolf" onclick="updateRoleNumber()"> Judas wolf<br><br>
+						<input type="number" id="regWolf" min="0" value="0" onchange="updateRoleNumber()"> <span title="Deze wolven behoren tot de wolven alliantie, en mogen met de andere wolven 's nachts iemand uitkiezen om op te peuzelen. Verder geen speciale krachten.'">Aantal reguliere wolven</span><br>
+						<input type="checkbox" name="color" value="Besmettelijke wolf" onclick="updateRoleNumber()"><span title="Deze wolf kan de 3e nacht iemand aanwijzen, en die wordt de 4e nacht ook een wolf."> Besmettelijke wolf</span><br>
+						<input type="checkbox" name="color" value="De jonge hond" onclick="updateRoleNumber()"><span title="Deze jonge hond is nog geen volle wolf. Deze mag in de 1e of 2e nacht iemand aanwijzen om te vermoorden, maar lukt alleen als die ook succesvol kan vertellen welke rol die persoon is (kan maar 1x gebeuren, en de burgerlijke burger telt niet.)
+						Tijdens de 3e nacht wordt deze jonge hond een volwaardige wolf en zal zich bij de pact aansluiten"> De jonge Hond</span><br>
+						<input type="checkbox" name="color" value="Medusa wolf" onclick="updateRoleNumber()"><span title="Als de stomme/ziener de rol van deze wolf bekijkt, zal de stomme sterven door de blitse blik van deze wolf."> Medusawolf</span><br>
+						<input type="checkbox" name="color" value="Wolf in schaapskleren" onclick="updateRoleNumber()"><span title="Deze wolf geeft aan het begin van het spel een rol door naar de leiding, en de stomme zal deze rol zien als die deze wolf aanschouwt. Krijgt verder geen speciale krachten."> Wolf in schaapskleren</span><br>
+						<input type="checkbox" name="color" value="Judas wolf" onclick="updateRoleNumber()"><span title="Deze wolf wil in zijn/haar 1tje winnen. Elke oneven nacht vanaf 3 (3e, 5e etc) mag deze wolf zelf een andere wolf slachten, en wint als die in zijn/haar eentje overblijft."> Judas wolf<br>
+						<input type="checkbox" name="color" value="Eldritch wolf" onclick="updateRoleNumber()"><span title="Deze wolf mag vanaf de 5e nacht, er een keer voor kiezen om een slachtoffer van een wolf te sparen. Dit slachtoffer voegt zich dan bij de wolven, maar zal ook zijn/haar normale krachten behouden."> Eldritch wolf<br><br>
 
-						<input type="number" id="regBurg" min="0" value="0" onchange="updateRoleNumber()"> Aantal reguliere burgers <br>
-						<input type="checkbox" name="color" value="Beschermengel" onclick="updateRoleNumber()"> Beschermengel<br>
-						<input type="checkbox" name="color" value="Augusto" onclick="updateRoleNumber()"> Augusto<br>
-						<input type="checkbox" name="color" value="Grafdelver" onclick="updateRoleNumber()"> Grafdelver<br>
-						<input type="checkbox" name="color" value="Jager" onclick="updateRoleNumber()"> Jager<br>
-						<input type="checkbox" name="color" value="Kruidenvrouwtje" onclick="updateRoleNumber()"> Kruidenvrouwtje<br>
-						<input type="checkbox" name="color" value="Priester" onclick="updateRoleNumber()"> Priester<br>
-						<input type="checkbox" name="color" value="Spiekersloan-kampioen" onclick="updateRoleNumber()"> Spiekersloan-kampioen<br>
-						<input type="checkbox" name="color" value="De onbetaalde prostituee" onclick="updateRoleNumber()"> De onbetaalde prostituee<br>
-						<input type="checkbox" name="color" value="Ouwe lul/trut" onclick="updateRoleNumber()"> Ouwe lul/trut<br>
-						<input type="checkbox" name="color" value="Stomme" onclick="updateRoleNumber()"> Stomme<br>
-						<input type="checkbox" name="color" value=" Burgerlijke burger" onclick="updateRoleNumber()"> Burgerlijke burger<br>
-						<input type="checkbox" name="color" value="Toneelspeler" onclick="updateRoleNumber()"> Toneelspeler<br>
-						<input type="checkbox" name="color" value="Kleptomaan" onclick="updateRoleNumber()"> Kleptomaan<br>
-						<input type="checkbox" name="color" value="Matchmaker" onclick="updateRoleNumber()"> Matchmaker<br>
-						<input type="checkbox" name="color" value="Priester" onclick="updateRoleNumber()"> Priester<br>
-						<input type="checkbox" name="color" value="Zusjes A" onclick="updateRoleNumber()"> Zusjes A<br>
-						<input type="checkbox" name="color" value="Zusjes B" onclick="updateRoleNumber()"> Zusjes B<br>
-						<input type="checkbox" name="color" value="Barbier" onclick="updateRoleNumber()"> Barbier<br>
+						<input type="number" id="regBurg" min="0" value="0" onchange="updateRoleNumber()"><span title="De normale burgers zijn gewone inwoners van het spel, en hebben naast het meestemmen in de lynch elke dag, zoals ieder ander, geen speciale krachten."> Aantal reguliere burgers </span><br>
+						<input type="checkbox" name="color" value="Augusto" onclick="updateRoleNumber()"><span title="De Augusto mag elke dag van 2 mensen vragen of ze in hetzelfde kamp zitten (burgers vs wolven), en de leiding zegt of dit zo is of niet."> Augusto</span><br>
+						<input type="checkbox" name="color" value=" Burgerlijke burger" onclick="updateRoleNumber()"><span title="Deze burger is precies hetzelfde als de gewone burger, behalve dat iedereen van tevoren weet dat deze speler een onschuldige burger is."> Burgerlijke burger</span><br>
+						<input type="checkbox" name="color" value="Beschermengel" onclick="updateRoleNumber()"><span title="Deze speler wijst overdag een speler aan (prive), en die speler kan 's nachts niet sterven. Nooit 2x dezelfde achter elkaar, nooit zichzelf. Als de engel eerst doodgaat, werkt de bescherming niet."> Beschermengel</span><br>
+						<input type="checkbox" name="color" value="Grafdelver" onclick="updateRoleNumber()"><span title="De Grafdelver mag eenmalig de rol van een vers lijk overnemen, dit mag zowel een burger als een wolvenrol zijn. Deze rol houdt de Grafdelver dan de rest van het spel. De grafdelver mag geen matchmaker worden. Als iemand gedood wordt, mag de Grafdelver in het dagdeel daarna aan de spelleider doorgeven dat hij/zij de rol van de gestorvene overneemt. De spelleider zal niet bekendmaken of de Grafdelver een rol heeft overgenomen."> Grafdelver</span><br>
+						<input type="checkbox" name="color" value="Jager" onclick="updateRoleNumber()"><span title="Wanneer de jager wordt gedood, hoe dan ook, zal deze aan de spelleiding doorgeven wie hij/zij ook meeneemt in het graf."> Jager</span><br>
+						<input type="checkbox" name="color" value="Kruidenvrouwtje" onclick="updateRoleNumber()"><span title="Het kruidenvrouwtje/mannetje heeft 1 levenselixer om een slachtoffer van de wolven die nacht te redden (weet ook wie), en 1 dood-elixer om zelf iemand van kant te maken. Dit wordt 's nachts aan de leiding doorgegeven."> Kruidenvrouwtje</span><br>
+						<input type="checkbox" name="color" value="Matchmaker" onclick="updateRoleNumber()"><span title="De matchmaker koppelt op nacht 0 of 1 twee personen, door dit door te vertellen aan de spelleiding. Deze 2 zullen van elkaar houden, een prive chat hebben, en als de een sterft, zal de ander uit verdriet ook sterven. Deze 2 kunnen samen winnen als zij met z'n tweeën overblijven. Dit kan ook als wolf en burger zijn."> Matchmaker</span><br>
+						<input type="checkbox" name="color" value="Necromancer" onclick="updateRoleNumber()"><span title="De Necromancer mag eenmalig een dood karakter terughalen van de dood, met zijn/haar krachten als dit relevant kan zijn. Helaas zijn de krachten niet perfect, en sterft deze persoon alsnog 2 dagdelen later."> Necromancer</span><br>
+						<input type="checkbox" name="color" value="Priester" onclick="updateRoleNumber()"><span title="De priester mag eenmalig wijwater over een medespeler gooien. De speler sterft als deze een kruidenvrouwtje of een weerwolf is. Als deze speler geen van beide is, bezwijkt de priester uit slecht vertrouwen en sterft zelf."> Priester</span><br>
+						<input type="checkbox" name="color" value="Spiekersloan-kampioen" onclick="updateRoleNumber()"><span title="Als deze speler 's nachts door een weerwolf wordt opgegeten, slaat deze een willekeurige wolf met een roestige spijker in de voet. Deze besmette wolf (niet de besmettelijke) zal na de lynch het volgende dagdeel ook bezwijken."> Spiekersloan-kampioen</span><br>
+						<input type="checkbox" name="color" value="De onbetaalde prostituee" onclick="updateRoleNumber()"><span title="Deze speler slaapt nooit thuis, en laat elke dag weten aan de spelleiding waar deze gaat slapen. Als de weerwolven de onbetaalde prostituee willen oppeuzelen, dan gebeurt er niks. Maar als deze bij het slachtoffer overnacht, zullen ze allebei opgepeuzeld worden. Deze kan nooit 2x achter elkaar bij dezelfde persoon slapen."> De onbetaalde prostituee</span><br>
+						<input type="checkbox" name="color" value="Ouwe lul/trut" onclick="updateRoleNumber()"><span title="De ouwe lul/trut overleeft een eerste aanval van de wolven, maar bij een tweede aanval sterft deze wel. Als deze speler wordt gelyncht door de burgers, verliezen alle spelers hun speciale krachten (op lynchstemrecht en de nachtelijke wandelingen na)."> Ouwe lul/trut</span><br>
+						<input type="checkbox" name="color" value="Stomme" onclick="updateRoleNumber()"><span title="Deze speler kan elke nacht een iemands rol bekijken, door dit aan de spelleider te vragen."> Stomme</span><br>
+						<input type="checkbox" name="color" value="Kleptomaan" onclick="updateRoleNumber()"><span title="De kleptomaan mag elke nacht bij iemand op bezoek komen om te kijken wat voor spulletjes hij/zij 'mag lenen.' Als deze speler iets steelt, kan deze het voorwerp zelf gebruiken (en de rechtmatige eigenaar niet meer). Dus, deze kan grafdelver spelen. De bestolene weet ook niet dat die bestolen is. Als de kleptomaan een 2e item steelt, moet deze kiezen welke van de 2 die wil behouden."> Kleptomaan</span><br>
+						<input type="checkbox" name="color" value="Toneelspeler" onclick="updateRoleNumber()"><span title="Deze speler krijgt aan het begin van het spel 3 burgerrollen van de spelleiding aangeboden, en deze mag elke nacht aangeven welke van de rollen die eenmalig wil overnemen. Dit hoeft niet allemaal achter elkaar, en na het uitspelen van elke rol wordt deze een gewone burger."> Toneelspeler</span><br>
+						<input type="checkbox" name="color" value="Barbier" onclick="updateRoleNumber()"><span title="De barbier mag met zijn scheermes overdag, eenmalig een speler naar keuze vermoorden. Dit doet hij of zij zo opzichtig of onopvallend als hij zelf wil. Als de speler een weerwolf is, overleeft hij/zij deze aanval."> Barbier</span><br>
+						<input type="checkbox" name="color" value="Zusjes A" onclick="updateRoleNumber()"><span title="twee spelers die de eerste nacht wakker worden en elkaar leren kennen, maar verder geen bijzondere krachten hebben. In tegenstelling tot de geliefde, blijft de ander wel leven als de een dood gaat. Zij mogen met elkaar smoezen over de gebeurtenissen in het dorp in hun eigen zussen-app. "> Zusjes A</span><br>
+						<input type="checkbox" name="color" value="Zusjes B" onclick="updateRoleNumber()"><span title="twee spelers die de eerste nacht wakker worden en elkaar leren kennen, maar verder geen bijzondere krachten hebben. In tegenstelling tot de geliefde, blijft de ander wel leven als de een dood gaat. Zij mogen met elkaar smoezen over de gebeurtenissen in het dorp in hun eigen zussen-app. "> Zusjes B</span><br>
 
 					</div>
 						<div id="ongelijk"></div><br>
