@@ -8,8 +8,12 @@ var removed;
 var useTwitch = document.querySelector('#names');
 var roleAmount = document.querySelector('#roleAmount');
 var nameArea = document.getElementById("nameArea");
+var rerollButton= document.getElementById("rerollButton");
 
-
+function reroll() {
+  useTwitch.innerHTML = ""; //Crude but effective
+  assignRoles();
+}
 
 function assignRoles() {
   addPlainsToRoles();
@@ -25,6 +29,8 @@ function assignRoles() {
 
 function randomize() {
   useTwitch.style.display = 'inline';
+  rerollButton.style.display = 'inline';
+  fillTableHeader();
   for (var i = 0; i < names.length; i++) {
     randomNumber = randomIntInc(roles.length);
     // console.log(names[i] + " = " + roles[randomNumber]);
@@ -36,6 +42,12 @@ function randomize() {
 function randomIntInc(high, low) {
   var returnio = Math.floor(Math.random() * high);
   return returnio;
+}
+
+function fillTableHeader() {
+// var header = useTwitch.createTHead();
+var rowhead = useTwitch.insertRow(0);
+rowhead.outerHTML = "<th>Naam</th><th>Rol</th>";
 }
 
 function fillNameTable(i) {
